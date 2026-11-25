@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PG in Nepali Patti, Tezpur</title>
+<meta name="description" content="Your PG, Nepali Patti, Tezpur, Assam – safe, clean and homely paying-guest rooms with food, Wi-Fi and 24×7 security.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#6b1a2a; --maroon-d:#4a0f1c; --gold:#c9a24a; --gold-l:#f3e6c4;
+  --ink:#1f1a17; --muted:#6b625c; --bg:#fbf8f3; --card:#ffffff; --line:#eadfcd;
+  --ok:#2f7d4f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.2}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem);color:var(--maroon)}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600}
+section{padding:80px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 44px}
+.sec-head p{color:var(--muted);margin-top:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:600;border:2px solid transparent;cursor:pointer;transition:.2s;font-size:.95rem}
+.btn-gold{background:var(--gold);color:var(--maroon-d)}
+.btn-gold:hover{background:#d8b45e}
+.btn-ghost{border-color:#ffffffaa;color:#fff}
+.btn-ghost:hover{background:#ffffff1a}
+.btn-maroon{background:var(--maroon);color:#fff}
+.btn-maroon:hover{background:var(--maroon-d)}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:#fbf8f3ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Playfair Display",serif;font-weight:700;font-size:1.35rem;color:var(--maroon)}
+.crest{width:38px;height:38px;border-radius:50%;background:var(--maroon);display:grid;place-items:center;color:var(--gold);font-size:1.1rem}
+.logo small{display:block;font-family:Inter;font-weight:500;font-size:.68rem;color:var(--muted);letter-spacing:.08em}
+.links{display:flex;gap:26px;font-weight:500;font-size:.93rem}
+.links a:hover{color:var(--maroon)}
+.nav .btn{padding:9px 18px}
+.burger{display:none;background:none;border:0;font-size:1.6rem;color:var(--maroon);cursor:pointer}
+
+/* hero */
+.hero{position:relative;color:#fff;padding:110px 0 120px;overflow:hidden;
+  background:radial-gradient(circle at 80% 20%,#8d2a3d 0,transparent 55%),linear-gradient(135deg,var(--maroon-d),var(--maroon) 60%,#7d2333)}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(#ffffff14 1px,transparent 1px);background-size:22px 22px;pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.7rem);margin:14px 0 18px}
+.hero h1 span{color:var(--gold)}
+.hero p.lead{font-size:1.1rem;opacity:.9;max-width:540px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.badges{display:flex;gap:22px;flex-wrap:wrap;margin-top:36px;font-size:.9rem;opacity:.92}
+.badges div{display:flex;align-items:center;gap:8px}
+.hero-card{background:#fffffff2;color:var(--ink);border-radius:20px;padding:28px;box-shadow:0 30px 60px #0004}
+.hero-card h3{color:var(--maroon);font-size:1.3rem;margin-bottom:6px}
+.hero-card .from{color:var(--muted);font-size:.9rem}
+.hero-card .price{font-size:2.3rem;font-weight:700;color:var(--maroon);font-family:"Playfair Display",serif}
+.hero-card .price small{font-size:.95rem;color:var(--muted);font-family:Inter;font-weight:500}
+.hero-card ul{list-style:none;margin:16px 0 22px;display:grid;gap:8px;font-size:.93rem}
+.hero-card li::before{content:"✓";color:var(--ok);font-weight:700;margin-right:8px}
+.hero-card .btn{width:100%;justify-content:center}
+.avail{display:inline-flex;align-items:center;gap:6px;background:#e8f5ec;color:var(--ok);font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.avail i{width:7px;height:7px;border-radius:50%;background:var(--ok)}
+
+/* highlights strip */
+.strip{background:var(--card);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:28px;padding-bottom:28px}
+.stat{text-align:center}
+.stat b{display:block;font-family:"Playfair Display",serif;font-size:1.8rem;color:var(--maroon)}
+.stat span{color:var(--muted);font-size:.88rem}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-grid p{color:var(--muted);margin-top:14px}
+.photo{border-radius:20px;min-height:340px;position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#d9c7a3,#b48d5a 55%,#7a5530)}
+.photo .tag{position:absolute;left:16px;bottom:16px;background:#fff;color:var(--maroon);font-weight:600;font-size:.82rem;padding:6px 12px;border-radius:8px}
+.photo svg{position:absolute;inset:0;margin:auto;opacity:.35}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.checks div{display:flex;gap:8px;font-weight:500;font-size:.93rem}
+.checks div::before{content:"✦";color:var(--gold)}
+
+/* rooms */
+.rooms{background:var(--card)}
+.room-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.room{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--bg);display:flex;flex-direction:column;transition:.2s}
+.room:hover{transform:translateY(-4px);box-shadow:0 18px 40px #6b1a2a1a}
+.room .img{height:170px;display:grid;place-items:center;font-size:3rem}
+.room:nth-child(1) .img{background:linear-gradient(135deg,#f3e6c4,#e3cb94)}
+.room:nth-child(2) .img{background:linear-gradient(135deg,#ead3d7,#c98d98)}
+.room:nth-child(3) .img{background:linear-gradient(135deg,#dfe8de,#a9c2a7)}
+.room .body{padding:22px;display:flex;flex-direction:column;flex:1}
+.room h3{font-size:1.3rem;color:var(--maroon)}
+.room .rp{font-size:1.7rem;font-weight:700;margin:8px 0 2px}
+.room .rp small{font-size:.85rem;color:var(--muted);font-weight:500}
+.room ul{list-style:none;margin:14px 0 20px;display:grid;gap:6px;font-size:.9rem;color:var(--muted);flex:1}
+.room li::before{content:"•";color:var(--gold);margin-right:8px;font-weight:700}
+.room.pop{border:2px solid var(--gold);position:relative}
+.room.pop::before{content:"Most chosen";position:absolute;top:14px;right:14px;background:var(--maroon);color:#fff;font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:999px}
+.note{text-align:center;color:var(--muted);font-size:.85rem;margin-top:22px}
+
+/* amenities */
+.amen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.amen{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.amen .ic{width:46px;height:46px;border-radius:12px;background:var(--gold-l);display:grid;place-items:center;font-size:1.4rem;margin-bottom:12px}
+.amen h4{font-size:1rem;margin-bottom:4px}
+.amen p{font-size:.86rem;color:var(--muted)}
+
+/* food */
+.food{background:var(--maroon);color:#fff}
+.food h2{color:#fff}
+.food .sec-head p{color:#f1dfe3}
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
+.tab{background:#ffffff14;color:#fff;border:1px solid #ffffff33;padding:8px 16px;border-radius:999px;cursor:pointer;font-weight:500;font-size:.88rem;font-family:inherit}
+.tab.on{background:var(--gold);color:var(--maroon-d);border-color:var(--gold)}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:900px;margin:0 auto}
+.meal{background:#ffffff10;border:1px solid #ffffff26;border-radius:16px;padding:22px}
+.meal .t{color:var(--gold);font-weight:600;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+.meal h4{font-family:"Playfair Display",serif;font-size:1.2rem;margin:4px 0 8px}
+.meal p{color:#f1dfe3;font-size:.92rem}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:14px}
+.g{border-radius:14px;position:relative;overflow:hidden;display:grid;place-items:center;font-size:2.4rem}
+.g span{position:absolute;left:12px;bottom:10px;font-size:.8rem;font-weight:600;background:#fffd;color:var(--maroon);padding:3px 9px;border-radius:6px}
+.g1{grid-column:span 2;grid-row:span 2;background:linear-gradient(135deg,#e7d6b5,#b8915c)}
+.g2{background:linear-gradient(135deg,#ecd6da,#c78b96)}
+.g3{background:linear-gradient(135deg,#dbe6ea,#93b3c0)}
+.g4{background:linear-gradient(135deg,#e2ead9,#a3bd8f)}
+.g5{background:linear-gradient(135deg,#f0e2c8,#d2aa62)}
+
+/* location */
+.loc{background:var(--card)}
+.loc-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:stretch}
+.near{display:grid;gap:12px;margin-top:20px}
+.near div{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--bg);font-weight:500;font-size:.93rem}
+.near small{color:var(--muted);font-weight:400}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:360px}
+.map iframe{width:100%;height:100%;min-height:360px;border:0}
+
+/* rules + faq */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.rules{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.rules h3{color:var(--maroon);margin-bottom:14px}
+.rules ul{list-style:none;display:grid;gap:12px}
+.rules li{display:flex;gap:12px;font-size:.93rem}
+.rules li b{min-width:120px;color:var(--ink)}
+.rules li span{color:var(--muted)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--gold);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px;font-size:.93rem}
+
+/* contact */
+.contact-box{background:linear-gradient(135deg,var(--maroon-d),var(--maroon));border-radius:24px;color:#fff;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact-box h2{color:#fff}
+.contact-box p{color:#f1dfe3;margin-top:10px}
+.cinfo{display:grid;gap:14px;margin-top:26px}
+.cinfo div{display:flex;gap:12px;align-items:flex-start}
+.cinfo .ic{width:38px;height:38px;border-radius:10px;background:#ffffff1a;display:grid;place-items:center;flex-shrink:0}
+form{background:#fff;color:var(--ink);border-radius:18px;padding:26px;display:grid;gap:12px}
+form h3{color:var(--maroon)}
+label{font-size:.82rem;font-weight:600;color:var(--muted)}
+input,select,textarea{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.93rem;background:var(--bg);margin-top:4px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-color:transparent}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+form .btn{justify-content:center}
+.ok-msg{display:none;background:#e8f5ec;color:var(--ok);padding:10px;border-radius:10px;font-size:.88rem;font-weight:500}
+
+footer{background:var(--ink);color:#cfc6bd;padding:40px 0 30px;margin-top:80px;font-size:.88rem}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .logo{color:#fff}
+footer .logo small{color:#a99f96}
+
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px #0003;color:#fff;font-size:1.6rem}
+.proto{position:fixed;left:16px;bottom:16px;z-index:60;background:#1f1a17e6;color:#fff;font-size:.74rem;padding:6px 12px;border-radius:999px}
+
+/* responsive */
+@media (max-width:960px){
+  .hero-grid,.about-grid,.loc-grid,.two,.contact-box{grid-template-columns:1fr}
+  .room-grid{grid-template-columns:1fr 1fr}
+  .amen-grid{grid-template-columns:1fr 1fr}
+  .menu{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  .strip .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .links,.nav .btn{display:none}
+  .burger{display:block}
+  .links.open{display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--bg);padding:16px 20px;gap:14px;border-bottom:1px solid var(--line)}
+  .room-grid{grid-template-columns:1fr}
+  section{padding:60px 0}
+  .contact-box{padding:28px 20px}
+  .row2,.checks{grid-template-columns:1fr}
+  .hero{padding:70px 0 80px}
+}
+@media (max-width:480px){
+  .amen-grid{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr;grid-auto-rows:150px}
+  .g1{grid-column:auto;grid-row:auto}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo"><div class="crest">♛</div><div>Your PG<small>NEPALI PATTI · TEZPUR</small></div></a>
+    <nav class="links" id="links">
+      <a href="#about">About</a><a href="#rooms">Rooms</a><a href="#amenities">Facilities</a>
+      <a href="#food">Food</a><a href="#location">Location</a><a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contact" class="btn btn-maroon">Book a Visit</a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Paying Guest · Tezpur, Assam</div>
+      <h1>Live like <span>royalty</span>,<br>pay like a student.</h1>
+      <p class="lead">Clean, safe and homely rooms in Nepali Patti, Tezpur, with home-style meals, high-speed Wi-Fi and 24×7 security. Made for students and working professionals.</p>
+      <div class="cta">
+        <a href="#rooms" class="btn btn-gold">View Rooms &amp; Rent</a>
+        <a href="#contact" class="btn btn-ghost">Schedule a Visit →</a>
+      </div>
+      <div class="badges">
+        <div>🛡️ CCTV &amp; secure entry</div><div>🍛 3 meals a day</div><div>📶 Wi-Fi included</div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="avail"><i></i>Beds available this month</div>
+      <h3>All-inclusive stay</h3>
+      <div class="from">Starting from</div>
+      <div class="price">₹X,XXX <small>/ month</small></div>
+      <ul>
+        <li>Furnished room with bed, table &amp; cupboard</li>
+        <li>Breakfast, lunch &amp; dinner</li>
+        <li>Electricity, water &amp; Wi-Fi included</li>
+        <li>Housekeeping &amp; laundry support</li>
+      </ul>
+      <a href="#contact" class="btn btn-maroon">Check Availability</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="stat"><b>24×7</b><span>Security &amp; CCTV</span></div>
+    <div class="stat"><b>3</b><span>Home-cooked meals daily</span></div>
+    <div class="stat"><b>100%</b><span>Power backup</span></div>
+    <div class="stat"><b>0</b><span>Hidden charges</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="photo">
+      <svg width="180" height="180" viewBox="0 0 24 24" fill="#fff"><path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg>
+      <div class="tag">📷 Building photo goes here</div>
+    </div>
+    <div>
+      <div class="eyebrow">About Your PG</div>
+      <h2>A home away from home in the heart of Tezpur</h2>
+      <p>Your PG is in Nepali Patti, a quiet residential area of Tezpur with markets, colleges and transport close by. We keep things simple: clean rooms, tasty food, reliable facilities, and an owner who is just a call away.</p>
+      <p>Whether you are studying, preparing for exams or starting your first job, you get a peaceful place to focus and the comfort of home.</p>
+      <div class="checks">
+        <div>Peaceful study environment</div><div>Regular room cleaning</div>
+        <div>RO drinking water</div><div>Friendly, caring management</div>
+        <div>Separate study area</div><div>Flexible monthly plans</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rooms" id="rooms">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Rooms &amp; Rent</div>
+      <h2>Choose your room</h2>
+      <p>Every plan includes food, electricity, water and Wi-Fi. One simple monthly rent.</p>
+    </div>
+    <div class="room-grid">
+      <div class="room">
+        <div class="img">🛏️</div>
+        <div class="body">
+          <h3>Single Room</h3>
+          <div class="rp">₹X,XXX <small>/ month</small></div>
+          <ul><li>Private room for one</li><li>Bed, mattress, study table &amp; chair</li><li>Personal cupboard</li><li>All meals included</li></ul>
+          <a href="#contact" class="btn btn-maroon" style="justify-content:center">Enquire</a>
+        </div>
+      </div>
+      <div class="room pop">
+        <div class="img">🛏️🛏️</div>
+        <div class="body">
+          <h3>Double Sharing</h3>
+          <div class="rp">₹X,XXX <small>/ person / month</small></div>
+          <ul><li>Two occupants per room</li><li>Separate bed &amp; cupboard each</li><li>Shared study table</li><li>All meals included</li></ul>
+          <a href="#contact" class="btn btn-maroon" style="justify-content:center">Enquire</a>
+        </div>
+      </div>
+      <div class="room">
+        <div class="img">🛏️🛏️🛏️</div>
+        <div class="body">
+          <h3>Triple Sharing</h3>
+          <div class="rp">₹X,XXX <small>/ person / month</small></div>
+          <ul><li>Three occupants per room</li><li>Most budget-friendly</li><li>Separate bed &amp; storage</li><li>All meals included</li></ul>
+          <a href="#contact" class="btn btn-maroon" style="justify-content:center">Enquire</a>
+        </div>
+      </div>
+    </div>
+    <p class="note">Security deposit: one month's rent (refundable). Rents shown as ₹X,XXX will be replaced with the actual rates.</p>
+  </div>
+</section>
+
+<section id="amenities">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Facilities</div>
+      <h2>Everything you need, already here</h2>
+    </div>
+    <div class="amen-grid">
+      <div class="amen"><div class="ic">📶</div><h4>High-speed Wi-Fi</h4><p>Reliable internet for classes, work and streaming.</p></div>
+      <div class="amen"><div class="ic">🍛</div><h4>Home-style Food</h4><p>Fresh veg &amp; non-veg meals, three times a day.</p></div>
+      <div class="amen"><div class="ic">🛡️</div><h4>CCTV Security</h4><p>Cameras on entry and common areas, secure gate.</p></div>
+      <div class="amen"><div class="ic">🔌</div><h4>Power Backup</h4><p>Inverter backup for lights, fans and Wi-Fi.</p></div>
+      <div class="amen"><div class="ic">💧</div><h4>RO Water</h4><p>Clean drinking water and 24-hour water supply.</p></div>
+      <div class="amen"><div class="ic">🧺</div><h4>Laundry</h4><p>Washing machine access for residents.</p></div>
+      <div class="amen"><div class="ic">🧹</div><h4>Housekeeping</h4><p>Regular cleaning of rooms, washrooms and common areas.</p></div>
+      <div class="amen"><div class="ic">🏍️</div><h4>Parking</h4><p>Space for two-wheelers inside the premises.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="food" id="food">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Mess Menu</div>
+      <h2>Food that tastes like home</h2>
+      <p>A sample weekly menu. Tap a day to see the meals.</p>
+    </div>
+    <div class="tabs" id="tabs"></div>
+    <div class="menu" id="menu"></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Gallery</div>
+      <h2>Take a look inside</h2>
+      <p>Placeholders for now. Real photos of the rooms, kitchen and building will go here.</p>
+    </div>
+    <div class="gal">
+      <div class="g g1">🏠<span>Building front</span></div>
+      <div class="g g2">🛏️<span>Double room</span></div>
+      <div class="g g3">🚿<span>Washroom</span></div>
+      <div class="g g4">🍽️<span>Dining area</span></div>
+      <div class="g g5">📚<span>Study corner</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="loc" id="location">
+  <div class="wrap loc-grid">
+    <div>
+      <div class="eyebrow">Location</div>
+      <h2>Nepali Patti, Tezpur</h2>
+      <p style="color:var(--muted);margin-top:10px">A calm residential area with everyday needs close by: markets, medical stores, banks and transport.</p>
+      <div class="near">
+        <div>🎓 Colleges &amp; coaching centres <small>Nearby</small></div>
+        <div>🏥 Hospitals &amp; pharmacies <small>Nearby</small></div>
+        <div>🚌 Tezpur bus stand <small>Short ride</small></div>
+        <div>🛒 Market &amp; daily needs <small>Walking distance</small></div>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="Map of Nepali Patti, Tezpur" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Nepali%20Patti%2C%20Tezpur%2C%20Assam&z=15&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap two">
+    <div class="rules">
+      <h3>House rules &amp; timings</h3>
+      <ul>
+        <li><b>Breakfast</b><span>7:30 – 9:30 AM</span></li>
+        <li><b>Lunch</b><span>12:30 – 2:30 PM</span></li>
+        <li><b>Dinner</b><span>8:00 – 10:00 PM</span></li>
+        <li><b>Gate closes</b><span>10:00 PM (inform in advance if late)</span></li>
+        <li><b>Visitors</b><span>Allowed in common area, 9 AM – 7 PM</span></li>
+        <li><b>Rent due</b><span>By the 5th of every month</span></li>
+        <li><b>Notice period</b><span>One month before vacating</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow">FAQ</div>
+      <h2 style="margin-bottom:20px">Common questions</h2>
+      <details open><summary>Is food included in the rent?</summary><p>Yes. Breakfast, lunch and dinner are included in every room plan.</p></details>
+      <details><summary>Can I visit before booking?</summary><p>Of course. Fill in the form below or call us to pick a time and we'll show you around.</p></details>
+      <details><summary>What documents are needed?</summary><p>A government photo ID, two passport-size photos, and your college or office ID.</p></details>
+      <details><summary>Is the deposit refundable?</summary><p>Yes, the full deposit is returned when you vacate after serving the notice period, minus any damages.</p></details>
+      <details><summary>Is it for boys or girls?</summary><p>To be confirmed by the management.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:20px">
+  <div class="wrap">
+    <div class="contact-box">
+      <div>
+        <div class="eyebrow">Get in touch</div>
+        <h2>Book your bed today</h2>
+        <p>Send an enquiry and we'll reply on WhatsApp with availability and rent details.</p>
+        <div class="cinfo">
+          <div><div class="ic">📍</div><div><b>Your PG</b><br>Nepali Patti, Tezpur, Sonitpur, Assam – 784001</div></div>
+          <div><div class="ic">📞</div><div><b>Phone / WhatsApp</b><br>+91 XXXXX XXXXX</div></div>
+          <div><div class="ic">🕘</div><div><b>Visiting hours</b><br>Every day, 9 AM – 7 PM</div></div>
+        </div>
+      </div>
+      <form id="enq" onsubmit="return send(event)">
+        <h3>Enquiry form</h3>
+        <div class="row2">
+          <div><label>Your name<input required name="name" placeholder="Full name"></label></div>
+          <div><label>Phone<input required name="phone" type="tel" placeholder="10-digit mobile"></label></div>
+        </div>
+        <div class="row2">
+          <div><label>Room type<select name="room"><option>Single Room</option><option selected>Double Sharing</option><option>Triple Sharing</option></select></label></div>
+          <div><label>Move-in date<input name="date" type="date"></label></div>
+        </div>
+        <div><label>I am a<select name="who"><option>Student</option><option>Working professional</option><option>Other</option></select></label></div>
+        <div><label>Message (optional)<textarea name="msg" rows="3" placeholder="Any questions?"></textarea></label></div>
+        <button class="btn btn-maroon" type="submit">Send Enquiry</button>
+        <div class="ok-msg" id="ok">Thanks! In the live site this will open WhatsApp with your details filled in.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="logo"><div class="crest">♛</div><div>Your PG<small>NEPALI PATTI · TEZPUR · ASSAM</small></div></div>
+    <div>Website concept · 2026<br>Rooms · Food · Facilities · Contact</div>
+  </div>
+</footer>
+
+<a class="wa" href="#contact" aria-label="WhatsApp">💬</a>
+<div class="proto">Website concept · sample content</div>
+
+<script>
+const MENU = {
+  Mon:["Aloo paratha, curd, tea","Rice, dal, aloo bhaji, salad","Roti, chicken curry / paneer, rice"],
+  Tue:["Poha, banana, tea","Rice, dal, mixed veg, papad","Roti, egg curry / chana masala, rice"],
+  Wed:["Bread omelette / toast, tea","Rice, masoor dal, fish curry / dal fry","Roti, mixed veg, rice, dal"],
+  Thu:["Upma, tea","Rice, dal, cabbage sabzi, pickle","Roti, rajma, rice, salad"],
+  Fri:["Puri sabzi, tea","Rice, dal, bhindi fry, curd","Roti, chicken / paneer butter masala, rice"],
+  Sat:["Idli sambar, tea","Khichdi, papad, chutney, salad","Roti, aloo matar, rice, dal"],
+  Sun:["Chole bhature, tea","Special: veg / chicken biryani, raita","Roti, egg bhurji / soya, rice, dal"]
+};
+const tabs = document.getElementById('tabs'), menu = document.getElementById('menu');
+function show(d){
+  [...tabs.children].forEach(b=>b.classList.toggle('on', b.textContent===d));
+  const [b,l,dn] = MENU[d];
+  menu.innerHTML = [["Breakfast","🌅",b],["Lunch","☀️",l],["Dinner","🌙",dn]]
+    .map(([t,i,x])=>`<div class="meal"><div class="t">${i} ${t}</div><h4>${d}day</h4><p>${x}</p></div>`).join('');
+}
+Object.keys(MENU).forEach(d=>{const b=document.createElement('button');b.className='tab';b.textContent=d;b.onclick=()=>show(d);tabs.appendChild(b);});
+const today = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][new Date().getDay()];
+show(today);
+// fix day names (Wed->Wednesday etc.)
+const FULL={Mon:"Monday",Tue:"Tuesday",Wed:"Wednesday",Thu:"Thursday",Fri:"Friday",Sat:"Saturday",Sun:"Sunday"};
+const _show=show; show=function(d){_show(d);menu.querySelectorAll('h4').forEach(h=>h.textContent=FULL[d]);}; show(today);
+
+function send(e){
+  e.preventDefault();
+  document.getElementById('ok').style.display='block';
+  e.target.reset();
+  return false;
+}
+document.querySelectorAll('#links a').forEach(a=>a.onclick=()=>document.getElementById('links').classList.remove('open'));
+</script>
+</body>
+</html>
